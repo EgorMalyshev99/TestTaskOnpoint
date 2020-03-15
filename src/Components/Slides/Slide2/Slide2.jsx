@@ -1,11 +1,13 @@
 import React from "react";
-import s from "./Slide2.module.css";
+import "./Slide2.css";
 
 const Slide2 = props => {
     return (
-        <div>
-            <div className={s.text}>
-                Основа терапии - патогенез СД2
+        <div className="wrapper_slide2 slide">
+            <div className="text">
+                Основа терапии –
+                <br/>
+                патогенез СД2
             </div>
         </div>
     );

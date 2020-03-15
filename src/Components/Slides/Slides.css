@@ -1,0 +1,4 @@
+.slides_wrapper {
+  transition: 1s;
+  transform: translateY(0);
+}

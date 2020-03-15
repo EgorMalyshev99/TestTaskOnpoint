@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+
+.wrapper_slide2 {
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  background-image: url(../../../Media/bg_slide2.png);
+}
+
+.text {
+  padding: 240px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+}

@@ -3,13 +3,12 @@ import "./App.css";
 import Slides from "./Components/Slides/Slides";
 import NavBar from "./Components/NavBar/NavBar";
 
-
 function App() {
   return (
-    <div>
+    <div className="app">
       <div className="content">
-        <Slides />
         <NavBar />
+        <Slides />
       </div>
     </div>
   );
