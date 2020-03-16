@@ -20,7 +20,7 @@ const NavBar = props => {
 
             document.querySelector('.point' + currentSlide).style.backgroundColor = '#f17900';
 
-            if (currentSlide === 1) {
+            if (currentSlide === 0) {
                 document.getElementById('scroll_down').style.opacity = 1;
             } else {
                 document.getElementById('scroll_down').style.opacity = 0;

@@ -54,3 +54,147 @@
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
+
+.pulse {
+  position: relative;
+}
+
+.circumference {
+  border: 2px solid #cf1538;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 0.62;
+  background-image: -moz-radial-gradient(
+    50% 50%,
+    circle closest-side,
+    rgb(222, 121, 27) 1%,
+    rgb(207, 20, 55) 100%
+  );
+  background-image: -webkit-radial-gradient(
+    50% 50%,
+    circle closest-side,
+    rgb(222, 121, 27) 1%,
+    rgb(207, 20, 55) 100%
+  );
+  background-image: -ms-radial-gradient(
+    50% 50%,
+    circle closest-side,
+    rgb(222, 121, 27) 1%,
+    rgb(207, 20, 55) 100%
+  );
+}
+
+.circumference::before {
+  content: "";
+  border: 1px solid #cf1538;
+  position: absolute;
+  border-radius: 50%;
+  animation: pulse 0.8s linear infinite;
+  background-color: rgba(207, 20, 54, 0.4);
+}
+
+.wrap {
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #cf1538;
+}
+
+.circles {
+  position: absolute;
+  bottom: 225px;
+}
+
+.circle_1_circle {
+  width: 16.5px;
+  height: 16.5px;
+}
+
+.circle_1_circle::before {
+  left: -17px;
+  right: -17px;
+  bottom: -17px;
+  top: -17px;
+}
+
+.circle_1_wrap {
+  height: 50px;
+  width: 50px;
+  margin-top: 6px;
+  margin-left: 560px;
+}
+
+.circle_2_circle {
+  width: 11px;
+  height: 11px;
+}
+
+.circle_2_circle::before {
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  top: -8px;
+}
+
+.circle_2_wrap {
+  height: 28px;
+  width: 28px;
+  margin-top: 110px;
+  margin-left: 271px;
+}
+
+.pulse-3__circle {
+  width: 8px;
+  height: 8px;
+}
+
+.circle_3_circle::before {
+  left: -7px;
+  right: -7px;
+  bottom: -7px;
+  top: -7px;
+}
+
+.circle_3_wrap {
+  height: 20px;
+  width: 20px;
+  margin-left: 477px;
+  margin-top: 82px;
+}
+
+.circle_4_circle {
+  width: 8px;
+  height: 8px;
+}
+
+.circle_4_circle::before {
+  left: -7px;
+  right: -7px;
+  bottom: -7px;
+  top: -7px;
+}
+
+.circle_4_wrap {
+  height: 20px;
+  width: 20px;
+  margin-left: 819px;
+  margin-top: -43px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}
