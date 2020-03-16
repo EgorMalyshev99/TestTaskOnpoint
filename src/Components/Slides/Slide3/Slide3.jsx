@@ -1,6 +1,5 @@
 import React from "react";
 import "./Slide3.css";
-
 import  BaseSlider  from "../../Slider/Slider";
 
 const Slide3 = props => {

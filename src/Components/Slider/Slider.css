@@ -1,31 +1,34 @@
 .scheme {
-  position: absolute;
+  position: relative;
   top: 100px;
   left: 50px;
   transition: all 1s ease 0s;
 }
 
+.scheme-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 3200px;
+  transition: all 1s 0s;
+}
+
 .scheme-1 {
-  background-image: url("../../Media/scheme3.png");
+  background-image: url("../../Media/scheme1.png");
   width: 910px;
   height: 502px;
 }
+
 .scheme-2 {
-  background-image: url("../../Media/scheme3.png");
+  background-image: url("../../Media/scheme2.png");
   width: 910px;
   height: 502px;
 }
+
 .scheme-3 {
   background-image: url("../../Media/scheme3.png");
   width: 910px;
   height: 502px;
 }
-
-/* .scheme-2 {
-  background-image: url("../../Media/scheme3.png");
-  width: 910px;
-  height: 502px;
-} */
 
 .slider {
   position: absolute;

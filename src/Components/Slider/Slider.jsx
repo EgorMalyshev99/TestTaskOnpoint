@@ -15,24 +15,29 @@ const BaseSlider = () => {
     sliderState !== 2 && value >= 66 && setSliderState(2);
   };
 
+  const schemePosition = () => {
+    switch (sliderState) {
+      case 0:
+        schemeOneRef.current.style.transform = "translateX(-1024px)";
+        break;
+      case 1:
+        schemeOneRef.current.style.transform = "translate(0)";
+        break;
+      case 2:
+        schemeOneRef.current.style.transform = "translateX(+1024px)";
+        break;
+      default:
+        return;
+    }
+  };
+
   const schemeOneRef = useRef();
-
-  const qqq = () => {
-    if (schemeOneRef.current)
-      schemeOneRef.current.style.transform = "translateX(-2048px)";
-  };
-
-  const qqqwww = () => {
-    if (schemeOneRef.current)
-      schemeOneRef.current.style.transform = "translate(0)";
-  };
 
   return (
     <div>
-      {sliderState === 1 && qqq()}
-      {sliderState === 0 && qqqwww()}
+      {schemeOneRef.current && schemePosition()}
       <div className="scheme-wrapper" ref={schemeOneRef}>
-        <div className="scheme-1 scheme" ></div>
+        <div className="scheme-1 scheme"></div>
         <div className="scheme-2 scheme"></div>
         <div className="scheme-3 scheme"></div>
       </div>
