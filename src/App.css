@@ -10,6 +10,11 @@
   border: 2px solid black;
 } */
 
+.scroll_down {
+  position: fixed;
+  bottom: 0px;
+}
+
 .slide {
   width: 1024px;
   height: 768px;

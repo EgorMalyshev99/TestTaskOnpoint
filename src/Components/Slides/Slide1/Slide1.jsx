@@ -50,9 +50,6 @@ const Slide1 = props => {
                 </div>
             </div>
 
-            <div className="scroll_down" id="scroll_down" >
-                <img src={require("../../../Media/next.png")} alt="next" />
-            </div>
         </div>
     );
 }
