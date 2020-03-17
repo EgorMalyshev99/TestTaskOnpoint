@@ -37,9 +37,30 @@ const BaseSlider = () => {
     <div className="slider_div">
       {schemeOneRef.current && schemePosition()}
       <div className="scheme-wrapper" ref={schemeOneRef}>
-        <div className="scheme-1 scheme"><img src={require("../../Media/scheme1.png")} alt=""/></div>
-        <div className="scheme-2 scheme"><img src={require("../../Media/scheme2.png")} alt=""/></div>
-        <div className="scheme-3 scheme"><img src={require("../../Media/scheme3.png")} alt=""/></div>
+        <div className="scheme-1 scheme">
+          <img src={require("../../Media/scheme1.png")} alt="" />
+          <div className="ice1_wrapper">
+            <img className="ice1_1" src={require("../../Media/ice1_1.png")} alt="" />
+            <img className="ice1_2" src={require("../../Media/ice1_2.png")} alt="" />
+            <img className="ice1_3" src={require("../../Media/ice1_3.png")} alt="" />
+          </div>
+        </div>
+        <div className="scheme-2 scheme">
+          <img src={require("../../Media/scheme2.png")} alt="" />
+          <div className="ice2_wrapper">
+            <img className="ice2_1" src={require("../../Media/ice1_1.png")} alt="" />
+            <img className="ice2_2" src={require("../../Media/ice2_2.png")} alt="" />
+            <img className="ice2_3" src={require("../../Media/ice2_3.png")} alt="" />
+          </div>
+        </div>
+        <div className="scheme-3 scheme">
+          <img src={require("../../Media/scheme3.png")} alt="" />
+          <div className="ice3_wrapper">
+            <img className="ice3_1" src={require("../../Media/ice3_1.png")} alt="" />
+            <img className="ice3_2" src={require("../../Media/ice3_2.png")} alt="" />
+            <img className="ice3_3" src={require("../../Media/ice3_3.png")} alt="" />
+          </div>
+          </div>
       </div>
       <Slider
         onChange={handleSliderMove}

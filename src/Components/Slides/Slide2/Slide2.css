@@ -14,3 +14,28 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
 }
+
+.slide2_ice1 {
+  position: absolute;
+  top: 140px;
+  left: 70px;
+
+}
+
+.slide2_ice2 {
+  position: absolute;
+  bottom: 190px;
+  left: 290px;
+}
+
+.slide2_ice3 {
+  position: absolute;
+  bottom: 80px;
+  right: 250px;
+}
+
+.slide2_ice4 {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
