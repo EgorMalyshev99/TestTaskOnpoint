@@ -18,13 +18,13 @@ const BaseSlider = () => {
   const schemePosition = () => {
     switch (sliderState) {
       case 0:
-        schemeOneRef.current.style.transform = "translateX(-1024px)";
+        schemeOneRef.current.style.transform = "translateX(0)";
         break;
       case 1:
-        schemeOneRef.current.style.transform = "translate(0)";
+        schemeOneRef.current.style.transform = "translate(-1024px)";
         break;
       case 2:
-        schemeOneRef.current.style.transform = "translateX(+1024px)";
+        schemeOneRef.current.style.transform = "translateX(-2048px)";
         break;
       default:
         return;
@@ -34,12 +34,12 @@ const BaseSlider = () => {
   const schemeOneRef = useRef();
 
   return (
-    <div>
+    <div className="slider_div">
       {schemeOneRef.current && schemePosition()}
       <div className="scheme-wrapper" ref={schemeOneRef}>
-        <div className="scheme-1 scheme"></div>
-        <div className="scheme-2 scheme"></div>
-        <div className="scheme-3 scheme"></div>
+        <div className="scheme-1 scheme"><img src={require("../../Media/scheme1.png")} alt=""/></div>
+        <div className="scheme-2 scheme"><img src={require("../../Media/scheme2.png")} alt=""/></div>
+        <div className="scheme-3 scheme"><img src={require("../../Media/scheme3.png")} alt=""/></div>
       </div>
       <Slider
         onChange={handleSliderMove}

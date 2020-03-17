@@ -1,3 +1,7 @@
+.slider_div {
+  display: inline;
+}
+
 .scheme {
   position: relative;
   top: 100px;
@@ -7,27 +11,26 @@
 
 .scheme-wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 3200px;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 3072px;
   transition: all 1s 0s;
 }
 
 .scheme-1 {
-  background-image: url("../../Media/scheme1.png");
-  width: 910px;
-  height: 502px;
+  width: 1024px;
+  height: 768px;
 }
 
 .scheme-2 {
-  background-image: url("../../Media/scheme2.png");
-  width: 910px;
-  height: 502px;
+  width: 1024px;
+  height: 768px;
 }
 
 .scheme-3 {
-  background-image: url("../../Media/scheme3.png");
-  width: 910px;
-  height: 502px;
+  width: 1024px;
+  height: 768px;
 }
 
 .slider {
