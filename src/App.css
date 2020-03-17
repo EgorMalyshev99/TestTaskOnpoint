@@ -4,12 +4,6 @@
   overflow: hidden;
 }
 
-/* .content {
-  min-height: 100%;
-  min-width: 100%;
-  border: 2px solid black;
-} */
-
 .scroll_down {
   position: fixed;
   bottom: 0px;

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap');
 
 .wrapper_slide1 {
   width: 1024px;
@@ -9,7 +9,7 @@
 }
 
 .slide1_head {
-  padding: 135px 0 0 70px;
+  position: absolute;
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
   letter-spacing: 2px;
@@ -17,7 +17,9 @@
 }
 
 .text1 {
-  padding: 22px 0 0 623px;
+  position: absolute;
+  left: 620px;
+  top: 273px;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
@@ -25,21 +27,27 @@
 }
 
 .text2 {
-  padding: 95px 0 0 225px;
+  position: absolute;
+  left: 220px;
+  top: 395px;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   color: rgb(50, 45, 122);
 }
 
 .text3 {
-  padding: 66px 0 0 785px;
+  position: absolute;
+  left: 790px;
+  top: 490px;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   color: rgb(50, 45, 122);
 }
 
 .text4 {
-  padding: 0 0 0 370px;
+  position: absolute;
+  left: 380px;
+  top: 510px;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   color: rgb(50, 45, 122);
@@ -60,7 +68,7 @@
 }
 
 .circumference {
-  border: 2px solid #cf1538;
+  border: 2px solid #cf6915;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -70,36 +78,36 @@
   background-image: -moz-radial-gradient(
     50% 50%,
     circle closest-side,
-    rgb(222, 121, 27) 1%,
-    rgb(207, 20, 55) 100%
+    rgb(228, 139, 57) 1%,
+    rgb(207, 79, 20) 100%
   );
   background-image: -webkit-radial-gradient(
     50% 50%,
     circle closest-side,
-    rgb(222, 121, 27) 1%,
-    rgb(207, 20, 55) 100%
+    rgb(228, 139, 57) 1%,
+    rgb(207, 79, 20) 100%
   );
   background-image: -ms-radial-gradient(
     50% 50%,
     circle closest-side,
-    rgb(222, 121, 27) 1%,
-    rgb(207, 20, 55) 100%
+    rgb(228, 139, 57) 1%,
+    rgb(207, 79, 20) 100%
   );
 }
 
 .circumference::before {
   content: "";
-  border: 1px solid #cf1538;
+  border: 1px solid #cf1b15;
   position: absolute;
   border-radius: 50%;
   animation: pulse 0.8s linear infinite;
-  background-color: rgba(207, 20, 54, 0.4);
+  background-color: rgba(206, 97, 46, 0.4);
 }
 
 .wrap {
   position: relative;
   border-radius: 50%;
-  border: 2px solid #cf1538;
+  border: 2px solid #cf6915;
 }
 
 .circles {
@@ -145,7 +153,7 @@
   margin-left: 271px;
 }
 
-.pulse-3__circle {
+.circle_3_circle {
   width: 8px;
   height: 8px;
 }

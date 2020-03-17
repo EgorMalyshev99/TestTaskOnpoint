@@ -1,6 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 .wrapper_slide3 {
     position: relative;
     width: 1024px;
     height: 768px;
     background-image: url(../../../Media/bg_slide3.png);
+}
+
+.date_wrapper {
+    position: absolute;
+    bottom: 55px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(235, 235, 235);
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.date1 {
+    position: absolute;
+    left: 190px;
+}
+
+.date2 {
+    position: absolute;
+    left: 500px;
+}
+
+.date3 {
+    position: absolute;
+    left: 790px;
 }

@@ -17,15 +17,14 @@ const NavBar = props => {
       p1.style.backgroundColor = "white";
       p2.style.backgroundColor = "white";
 
-      document.querySelector(".point" + currentSlide).style.backgroundColor =
-        "#f17900";
+      document.querySelector(".point" + currentSlide).style.backgroundColor = "#f17900";
 
       if (currentSlide === 0) {
-        document.getElementById("scroll_down").style.opacity = 1;
-      } else if (currentSlide === 2) {
-        document.getElementById("scroll_down").style.display = "none";
+        document.getElementById("scroll_down").style.display = "block";
+        document.getElementById("scroll_down").style.opacity = "1";
       } else {
-        document.getElementById("scroll_down").style.opacity = 0;
+        document.getElementById("scroll_down").style.opacity = "0";
+        document.getElementById("scroll_down").style.display = "none";
       }
     };
 
