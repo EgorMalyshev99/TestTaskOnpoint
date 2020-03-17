@@ -22,11 +22,16 @@
 .scheme-1 {
   width: 1024px;
   height: 768px;
+  margin-left: 25px;
 }
 
 .scheme-2 {
   width: 1024px;
   height: 768px;
+}
+
+.scheme-2 img {
+  padding-left: 50px;
 }
 
 .scheme-3 {

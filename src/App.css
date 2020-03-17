@@ -5,6 +5,7 @@
 }
 
 .scroll_down {
+  transition: all 1s linear;
   position: fixed;
   bottom: 0px;
 }
