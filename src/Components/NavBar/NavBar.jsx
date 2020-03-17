@@ -36,7 +36,7 @@ const NavBar = props => {
     window.addEventListener("touchend", e => {
       if (
         e.changedTouches[0].target ===
-        document.querySelector(".rc-slider-handle") // не трогаем свайп на слайдере
+        document.querySelector(".DefaultHandle_handle") // не трогаем свайп на слайдере
       ) {
         return;
       }

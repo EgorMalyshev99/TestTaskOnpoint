@@ -1,18 +1,30 @@
 import React, { useState, useRef } from "react";
-
-import Slider from "rc-slider";
-// import "rc-slider/assets/index.css";
-
 import "./Slider.css";
+import Rheostat from "rheostat";
+import "rheostat/initialize";
 
 const BaseSlider = () => {
   const [sliderState, setSliderState] = useState(2);
-  const currentValue = 100;
+  const [sliderPos, setSliderPos] = useState([100]);
 
   const handleSliderMove = value => {
-    sliderState !== 0 && value <= 33 && setSliderState(0);
-    sliderState !== 1 && value >= 33 && value <= 66 && setSliderState(1);
-    sliderState !== 2 && value >= 66 && setSliderState(2);
+    const currentValue = value.values[0] && value.values[0];
+    setSliderPos([currentValue]);
+
+    sliderState !== 0 && currentValue <= 33 && setSliderState(0);
+    sliderState !== 1 &&
+      currentValue >= 33 &&
+      currentValue <= 66 &&
+      setSliderState(1);
+    sliderState !== 2 && currentValue >= 66 && setSliderState(2);
+  };
+
+  const handleOnAfterChange = () => {
+    console.log(sliderPos[0]);
+
+    sliderPos <= 33 && setSliderPos([0]);
+    sliderPos >= 33 && sliderPos <= 66 && setSliderPos([50]);
+    sliderPos >= 66 && setSliderPos([100]);
   };
 
   const schemePosition = () => {
@@ -60,12 +72,12 @@ const BaseSlider = () => {
             <img className="ice3_2" src={require("../../Media/ice3_2.png")} alt="" />
             <img className="ice3_3" src={require("../../Media/ice3_3.png")} alt="" />
           </div>
-          </div>
+        </div>
       </div>
-      <Slider
-        onChange={handleSliderMove}
-        defaultValue={currentValue}
-        className="slider"
+      <Rheostat
+        onValuesUpdated={handleSliderMove}
+        values={sliderPos}
+        onSliderDragEnd={handleOnAfterChange}
       />
     </div>
   );
