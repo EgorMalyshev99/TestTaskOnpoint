@@ -19,9 +19,16 @@ const BaseSlider = () => {
     sliderState !== 2 && currentValue >= 66 && setSliderState(2);
   };
 
+  const handleOnBeforeChange = () => {
+    document.getElementsByClassName('DefaultHandle_handle')[0].style.transition = "all 0s";
+    document.getElementsByClassName('DefaultProgressBar_progressBar')[0].style.transition = "all 0s";
+  };
+
   const handleOnAfterChange = () => {
     console.log(sliderPos[0]);
 
+    document.getElementsByClassName('DefaultHandle_handle')[0].style.transition = "all 1s";
+    document.getElementsByClassName('DefaultProgressBar_progressBar')[0].style.transition = "all 1s";
     sliderPos <= 33 && setSliderPos([0]);
     sliderPos >= 33 && sliderPos <= 66 && setSliderPos([50]);
     sliderPos >= 66 && setSliderPos([100]);
@@ -50,27 +57,24 @@ const BaseSlider = () => {
       {schemeOneRef.current && schemePosition()}
       <div className="scheme-wrapper" ref={schemeOneRef}>
         <div className="scheme-1 scheme">
-          <img src={require("../../Media/scheme1.png")} alt="" />
           <div className="ice1_wrapper">
-            <img className="ice1_1" src={require("../../Media/ice1_1.png")} alt="" />
-            <img className="ice1_2" src={require("../../Media/ice1_2.png")} alt="" />
-            <img className="ice1_3" src={require("../../Media/ice1_3.png")} alt="" />
+            <div className="ice1_1"></div>
+            <div className="ice1_2"></div>
+            <div className="ice1_3"></div>
           </div>
         </div>
         <div className="scheme-2 scheme">
-          <img src={require("../../Media/scheme2.png")} alt="" />
           <div className="ice2_wrapper">
-            <img className="ice2_1" src={require("../../Media/ice1_1.png")} alt="" />
-            <img className="ice2_2" src={require("../../Media/ice2_2.png")} alt="" />
-            <img className="ice2_3" src={require("../../Media/ice2_3.png")} alt="" />
+            <div className="ice2_1"></div>
+            <div className="ice2_2"></div>
+            <div className="ice2_3"></div>
           </div>
         </div>
         <div className="scheme-3 scheme">
-          <img src={require("../../Media/scheme3.png")} alt="" />
           <div className="ice3_wrapper">
-            <img className="ice3_1" src={require("../../Media/ice3_1.png")} alt="" />
-            <img className="ice3_2" src={require("../../Media/ice3_2.png")} alt="" />
-            <img className="ice3_3" src={require("../../Media/ice3_3.png")} alt="" />
+            <div className="ice3_1"></div>
+            <div className="ice3_2"></div>
+            <div className="ice3_3"></div>
           </div>
         </div>
       </div>
@@ -78,6 +82,7 @@ const BaseSlider = () => {
         onValuesUpdated={handleSliderMove}
         values={sliderPos}
         onSliderDragEnd={handleOnAfterChange}
+        onSliderDragStart={handleOnBeforeChange}
       />
     </div>
   );

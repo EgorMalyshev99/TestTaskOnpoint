@@ -20,21 +20,23 @@
 }
 
 .scheme-1 {
+  background-image: url(../../Media/scheme1.png);
+  background-repeat: no-repeat;
   width: 1024px;
   height: 768px;
   margin-left: 25px;
 }
 
 .scheme-2 {
+  background-image: url(../../Media/scheme2.png);
+  background-repeat: no-repeat;
   width: 1024px;
   height: 768px;
 }
 
-.scheme-2 img {
-  padding-left: 50px;
-}
-
 .scheme-3 {
+  background-image: url(../../Media/scheme3.png);
+  background-repeat: no-repeat;
   width: 1024px;
   height: 768px;
 }
@@ -48,7 +50,6 @@
 }
 
 .DefaultHandle_handle {
-  transition: all 0.15s ease;
   position: absolute;
   bottom: -14px;
   background-image: url("../../Media/cursor.png") !important;
@@ -67,7 +68,6 @@
 }
 
 .DefaultProgressBar_progressBar {
-  transition: all 0.15s ease;
   position: absolute;
   bottom: 10px;
   max-width: 100%;
@@ -84,26 +84,39 @@ button {
 
 .ice1_1 {
   position: absolute;
+  background-image: url(../../Media/ice1_1.png);
+  width: 217px;
+  height: 204px;
   left: -20px;
+  bottom: 138px;
   opacity: 0.7;
 }
 
 .ice1_2 {
   position: absolute;
-  top: 100px;
-  right: 230px;
+  background-image: url(../../Media/ice1_2.png);
+  width: 107px;
+  height: 101px;
+  top: 115px;
+  right: 320px;
   opacity: 0.5;
 }
 
 .ice1_3 {
   position: absolute;
-  right: 100px;
-  top: -50px;
+  background-image: url(../../Media/ice1_3.png);
+  width: 38px;
+  height: 39px;
+  right: 160px;
+  top: 0px;
   opacity: 0.5;
 }
 
 .ice2_1 {
   position: absolute;
+  background-image: url(../../Media/ice2_1.png);
+  width: 126px;
+  height: 197px;
   right: 58px;
   bottom: 110px;
   opacity: 0.7;
@@ -111,6 +124,9 @@ button {
 
 .ice2_2 {
   position: absolute;
+  background-image: url(../../Media/ice2_2.png);
+  width: 107px;
+  height: 101px;
   top: 140px;
   left: -40px;
   opacity: 0.65;
@@ -118,6 +134,9 @@ button {
 
 .ice2_3 {
   position: absolute;
+  background-image: url(../../Media/ice2_3.png);
+  width: 38px;
+  height: 39px;
   right: 540px;
   top: -10px;
   opacity: 0.8;
@@ -125,13 +144,19 @@ button {
 
 .ice3_1 {
   position: absolute;
-  bottom: 70px;
+  background-image: url(../../Media/ice3_1.png);
+  width: 191px;
+  height: 180px;
+  bottom: 90px;
   left: 100px;
   z-index: -1;
 }
 
 .ice3_2 {
   position: absolute;
+  background-image: url(../../Media/ice3_2.png);
+  width: 88px;
+  height: 102px;
   top: 100px;
   right: 50px;
   opacity: 0.8;
@@ -140,6 +165,9 @@ button {
 
 .ice3_3 {
   position: absolute;
+  background-image: url(../../Media/ice3_3.png);
+  width: 33px;
+  height: 39px;
   left: -20px;
   top: -7px;
   opacity: 0.7;

@@ -9,9 +9,7 @@ function App() {
       <div className="content">
         <NavBar />
         <Slides />
-        <div className="scroll_down" id="scroll_down">
-          <img src={require("./Media/next.png")} alt="next" />
-        </div>
+        <div className="scroll_down" id="scroll_down"></div>
       </div>
     </div>
   );

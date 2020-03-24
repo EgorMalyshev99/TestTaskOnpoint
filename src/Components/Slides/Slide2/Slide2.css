@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
 
 .wrapper_slide2 {
   position: relative;
@@ -11,31 +11,46 @@
   padding: 240px;
   text-align: center;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
 }
 
 .slide2_ice1 {
   position: absolute;
+  background-image: url(../../../Media/slide2_ice1.png);
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 39px;
   top: 140px;
   left: 70px;
-
 }
 
 .slide2_ice2 {
   position: absolute;
+  background-image: url(../../../Media/slide2_ice2.png);
+  background-repeat: no-repeat;
+  width: 104px;
+  height: 101px;
   bottom: 190px;
   left: 290px;
 }
 
 .slide2_ice3 {
   position: absolute;
+  background-image: url(../../../Media/slide2_ice3.png);
+  width: 75px;
+  height: 76px;
+  background-repeat: no-repeat;
   bottom: 80px;
   right: 250px;
 }
 
 .slide2_ice4 {
   position: absolute;
+  background-image: url(../../../Media/slide2_ice4.png);
+  width: 148px;
+  height: 206px;
+  background-repeat: no-repeat;
   top: 80px;
   right: 0;
 }
